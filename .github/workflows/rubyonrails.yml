@@ -45,7 +45,6 @@ jobs:
       - name: Print
         continue-on-error: true
         run: |
-            cp coverage/.last_run.json last.json
             ls
             pwd
             ls coverage
