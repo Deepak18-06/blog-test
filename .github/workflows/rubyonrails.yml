@@ -57,6 +57,9 @@ jobs:
       - uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
+      - uses: joshmfrankel/simplecov-check-action@main
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
       # - name: Add code coverage comment
       #   uses: romeovs/lcov-reporter-action@v0.2.16
       #   with:
